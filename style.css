@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+.navbar-brand h1 {
+    color: #000000;
+    margin-left: 100px; 
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-right img {
+    width: 40px;
+    height: auto;
+}
+
+.login-btn {
+    background-color: #fff;
+    color: #96C67F;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: #96C67F;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn:hover, .register-btn:hover {
+    background-color: #ccc;
+}
+
+.rectangle {
+    background-color: #F8F8F8;
+    margin-top: 120px;
+    padding: 20px;
+    position: relative;
+    margin-left: 120px; 
+    width: 1272px; 
+    height: 322px; 
+    border-radius: 20px; 
+}
+
+.content {
+    margin-right: auto;
+    padding: 50px;
+    width: 432px;
+}
+
+.rectangle h2 {
+    font-weight: bold;
+}
+.rectangle p {
+    margin-bottom: 10px;
+}
+
+.rectangle img {
+    margin-left: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+.image-section {
+    position: relative;
+    overflow: visible; 
+}
+
+.rectangle img[src$="topRight.png"] {
+    position: absolute;
+    top: -250px; 
+    left: 600px;
+    z-index: 1;
+}
+
+.overlay-img-left,
+.overlay-img-right {
+    position: relative; 
+    z-index: 2; 
+}
+
+.overlay-img-left {
+    margin-bottom: 100px;
+    left: 400px;
+    top: -120px;
+}
+
+.overlay-img-right {
+    margin-bottom: 100px;
+    left: 780px;
+    top: -370px; 
+}
