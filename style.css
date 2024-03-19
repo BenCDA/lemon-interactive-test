@@ -10,11 +10,15 @@
     align-items: center;
     background-color: #FFFFFF;
     padding: 10px 20px;
+    margin-right: 80px;
 }
 
 .navbar-brand h1 {
     color: #000000;
-    margin-left: 100px; 
+    margin-left: 120px; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32.8px;
 }
 
 .navbar-menu ul {
@@ -29,6 +33,8 @@
 .navbar-menu li a {
     color: #000000;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 .navbar-right img {
@@ -43,6 +49,8 @@
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 .register-btn {
@@ -52,21 +60,26 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .login-btn:hover, .register-btn:hover {
     background-color: #ccc;
 }
+.news {
+    margin-left: 120px;
+}
 
-.rectangle {
+header {
     background-color: #F8F8F8;
-    margin-top: 120px;
     padding: 20px;
-    position: relative;
+    margin-top: 120px; 
     margin-left: 120px; 
-    width: 1272px; 
-    height: 322px; 
-    border-radius: 20px; 
+    margin-right: 80px;
+    border-radius: 20px;
+    height: 300px;
 }
 
 .content {
@@ -75,14 +88,23 @@
     width: 432px;
 }
 
-.rectangle h2 {
+header h2 {
     font-weight: bold;
-}
-.rectangle p {
-    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 81.71px;
 }
 
-.rectangle img {
+header p {
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21.79px;
+}
+
+header img {
     margin-left: auto;
     margin-top: 10px;
     display: block;
@@ -93,9 +115,9 @@
     overflow: visible; 
 }
 
-.rectangle img[src$="topRight.png"] {
+header img[src$="topRight.png"] {
     position: absolute;
-    top: -250px; 
+    top: -300px; 
     left: 600px;
     z-index: 1;
 }
@@ -109,11 +131,61 @@
 .overlay-img-left {
     margin-bottom: 100px;
     left: 400px;
-    top: -120px;
+    top: -170px;
 }
 
 .overlay-img-right {
     margin-bottom: 100px;
     left: 780px;
-    top: -370px; 
+    top: -430px; 
+}
+
+main {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    padding-top: 200px; 
+    margin-left: 120px;
+    margin-right: 80px;
+    gap: 10px;
+}
+
+main h2 {
+    font-family: 'Open Sans',  sans-serif;
+    font-weight: 700;
+    line-height: 32.68px;
+    font-size: 24px;
+}
+
+main p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.grey-card, .green-card {
+    width: 100%; 
+    height: 257px;
+    border-radius: 20px;
+    margin-bottom: 50px; 
+}
+
+.grey-card {
+    background-color: #F8F8F8;
+}
+
+.green-card {
+    background-color: #96C67F;
+    margin-top: 120px; 
+}
+
+.grey-card-image {
+    position: absolute;
+    top: -20px; 
+    left: -20px; 
+    width: 40px; 
+    height: 40px; 
+    z-index: 1; 
 }
