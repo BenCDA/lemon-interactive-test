@@ -292,3 +292,77 @@ section {
     font-size: 16px;
     line-height: 24px;
 }
+
+article {
+    margin-left: 120px;
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+    height: 352px;
+}
+
+
+.first-avis,
+.second-avis {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #F8F8F8;
+}
+
+.first-avis img,
+.second-avis img {
+    margin-right: 20px;
+}
+
+.first-avis div,
+.second-avis div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-avis h2,
+.second-avis h2 {
+    margin: 0;
+}
+
+.first-avis h3,
+.second-avis h3 {
+    margin-top: 5px;
+}
+
+
+.underline {
+    position: absolute;
+    left: 120px;
+    bottom: -1290px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -120px;
+    margin-top: 80px;
+}
+
+article h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27.24px;
+}
+
+article h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24.51px;
+    color: #96C67F;
+}
+
+article p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
