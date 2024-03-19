@@ -139,15 +139,18 @@ header img[src$="topRight.png"] {
     left: 780px;
     top: -430px; 
 }
-
 main {
     display: flex;
     flex-direction: row; 
-    align-items: center; 
+    align-items: flex-start; 
     padding-top: 200px; 
     margin-left: 120px;
     margin-right: 80px;
     gap: 10px;
+}
+
+.card-content {
+    padding: 50px; 
 }
 
 main h2 {
@@ -164,12 +167,12 @@ main p {
     line-height: 24px;
 }
 
-
 .grey-card, .green-card {
-    width: 100%; 
+    width: calc(50% - 5px); 
     height: 257px;
     border-radius: 20px;
     margin-bottom: 50px; 
+    position: relative; 
 }
 
 .grey-card {
@@ -181,11 +184,76 @@ main p {
     margin-top: 120px; 
 }
 
-.grey-card-image {
+.grey-card-image, .green-card-image {
     position: absolute;
     top: -20px; 
-    left: -20px; 
+    left: 20px; 
     width: 40px; 
     height: 40px; 
     z-index: 1; 
+    border-radius: 10px;
+}
+
+.grey-card-image {
+    background-color: #96C67F;
+   
+}
+
+.green-card-image {
+    background-color: #F8F8F8;
+   
+}
+
+section {
+    margin-left: 120px;
+    margin-right: 80px;
+    padding-top: 50px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap:200px;
+}
+
+.bg-left {
+    background-color: #96C67F;
+    border-radius: 20px;
+    height: 643px;
+    width: 100%;
+    position: relative;
+}
+
+.first-image, .second-image {
+    position: absolute; 
+}
+
+.first-image {
+    height: auto; 
+    top: 60px; 
+    left: -49px;
+    z-index: 1;
+}
+
+.second-image {
+    height: auto; 
+    bottom: 230px; 
+    left: 130px; 
+}
+.right-text {
+    flex-grow: 1; 
+}
+
+.right-text h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61.28px;
+}
+
+.right-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
 }
