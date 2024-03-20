@@ -469,11 +469,6 @@ footer h2 {
     background-color: #ccc;
 }
 
-
-
-
-
-/* Styles pour le menu burger */
 .burger-menu {
     display: none; 
 }
@@ -485,6 +480,7 @@ footer h2 {
     margin: 6px 0;
     transition: transform 0.3s ease-in-out;
 }
+
 
 .navbar-menu {
     display: none; 
@@ -500,4 +496,35 @@ footer h2 {
     z-index: 1000;
     padding: 20px;
 }
+.burger-menu-search-bar {
+    display: none; 
+    border: 2px solid var(--secondary-color); 
+    border-radius: 5px;
+    padding: 5px; 
+}
 
+.burger-menu-search-bar.active {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-right: 20px; 
+    background-color: #F8F8F8;
+}
+
+.burger-menu-search-bar input {
+    flex-grow: 1; 
+    padding: 8px; 
+    border: none; 
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: #F8F8F8;
+}
+
+.burger-menu-search-bar button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
