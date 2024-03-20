@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #96C67F;
+    --secondary-color: #FFFFFF;
+    --text-color: #000000;
+    --font-family: 'Open Sans', sans-serif;
+    --button-padding: 8px 12px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: var(--secondary-color);
     padding: 10px 20px;
     margin-right: 80px;
 }
@@ -18,8 +26,8 @@
 }
 
 .navbar-brand h1 {
-    color: #000000;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    font-family: var(--font-family);
     font-weight: 600;
     font-size: 32.8px;
     margin-left: 120px;
@@ -31,10 +39,9 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #96C67F;
+    background-color: var(--primary-color);
     border-radius: 50%;
 }
-
 
 .navbar-brand h1::before {
     top: -5px;
@@ -48,7 +55,6 @@
     transform: translateX(50%);
 }
 
-
 .navbar-menu ul {
     list-style-type: none;
     display: flex;
@@ -59,9 +65,9 @@
 }
 
 .navbar-menu li a {
-    color: #000000;
+    color: var(--text-color);
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-size: 16px;
 }
 
@@ -71,26 +77,25 @@
 }
 
 .login-btn {
-    background-color: #fff;
-    color: #96C67F;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border: none;
-    padding: 8px 12px;
+    padding: var(--button-padding);
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-size: 16px;
 }
 
 .register-btn {
-    background-color: #96C67F;
-    color: #FFFFFF;
-    padding: 8px 12px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--button-padding);
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-size: 16px;
-    line-height: 20px;
 }
 
 .login-btn:hover,
@@ -120,7 +125,7 @@ header {
 
 header h2 {
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 40px;
     line-height: 81.71px;
@@ -128,7 +133,7 @@ header h2 {
 
 header p {
     margin-bottom: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
     line-height: 21.79px;
@@ -185,14 +190,14 @@ main {
 }
 
 main h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
     line-height: 32.68px;
     font-size: 24px;
 }
 
 main p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -212,7 +217,7 @@ main p {
 }
 
 .green-card {
-    background-color: #96C67F;
+    background-color: var(--primary-color);
     margin-top: 120px;
 }
 
@@ -228,13 +233,11 @@ main p {
 }
 
 .grey-card-image {
-    background-color: #96C67F;
-
+    background-color: var(--primary-color);
 }
 
 .green-card-image {
     background-color: #F8F8F8;
-
 }
 
 section {
@@ -250,7 +253,7 @@ section {
 }
 
 .bg-left {
-    background-color: #96C67F;
+    background-color: var(--primary-color);
     border-radius: 20px;
     height: 643px;
     width: 100%;
@@ -280,14 +283,14 @@ section {
 }
 
 .right-text h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 45px;
     line-height: 61.28px;
 }
 
 .right-text p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -300,7 +303,6 @@ article {
     gap: 50px;
     height: 352px;
 }
-
 
 .first-avis,
 .second-avis {
@@ -331,7 +333,6 @@ article {
     margin-top: 5px;
 }
 
-
 .underline {
     position: absolute;
     left: 120px;
@@ -346,40 +347,46 @@ article {
 }
 
 article h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 20px;
     line-height: 27.24px;
 }
 
 article h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
     font-size: 18px;
     line-height: 24.51px;
-    color: #96C67F;
+    color: var(--primary-color);
 }
 
 article p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
 }
+
 footer {
     background-color: #000000;
     padding: 50px;
-    color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--secondary-color);
+    font-family: var(--font-family);
     height: 414px;
 }
-
-footer h2 {
-    padding-top: 120px;
-    margin-left: 50px;
+footer h1 {
+    font-weight: 600;
+    font-size: 32.8px;
+    line-height: 44.67px;
 }
 
-
+footer p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21.79px;
+    letter-spacing: 1px;
+}
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -391,9 +398,10 @@ footer h2 {
     margin-left: 120px;
 }
 
-.right-section {
+.image-gallery {
     display: flex;
-    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .list-container {
@@ -413,8 +421,39 @@ footer h2 {
 }
 
 .search-bar {
+    display: flex;
+    align-items: center; 
     margin-top: 20px;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 5px;
+}
+
+.search-bar input {
+    flex-grow: 1; 
+    margin-right: 10px; 
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 19.07px;
+    font-weight: 400;
+}
+
+.search-bar button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: var(--button-padding);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 19.07px;
+    font-weight: 400;
+}
+
+.search-bar button:hover {
+    background-color: #ccc;
 }
