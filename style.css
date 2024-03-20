@@ -366,3 +366,55 @@ article p {
     font-size: 18px;
     line-height: 30px;
 }
+footer {
+    background-color: #000000;
+    padding: 50px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    height: 414px;
+}
+
+footer h2 {
+    padding-top: 120px;
+    margin-left: 50px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-section {
+    margin-right: 20px;
+    margin-left: 120px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-container {
+    display: flex;
+    margin-right: 200px;
+}
+
+.list-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px; 
+}
+
+.list-container ul:last-child {
+    margin-right: 0; 
+}
+
+.search-bar {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
