@@ -72,8 +72,8 @@
 }
 
 .navbar-right img {
-    width: 40px;
-    height: auto;
+    width: 18.71px;
+    height: 18.71px;
 }
 
 .login-btn {
@@ -375,6 +375,7 @@ footer {
     font-family: var(--font-family);
     height: 414px;
 }
+
 footer h1 {
     font-weight: 600;
     font-size: 32.8px;
@@ -387,6 +388,7 @@ footer p {
     line-height: 21.79px;
     letter-spacing: 1px;
 }
+
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -407,22 +409,31 @@ footer p {
 .list-container {
     display: flex;
     margin-right: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .list-container ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .list-container ul:last-child {
-    margin-right: 0; 
+    margin-right: 0;
+}
+
+footer h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32.68px;
 }
 
 .search-bar {
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-top: 20px;
     background-color: var(--secondary-color);
     padding: 10px;
@@ -430,8 +441,8 @@ footer p {
 }
 
 .search-bar input {
-    flex-grow: 1; 
-    margin-right: 10px; 
+    flex-grow: 1;
+    margin-right: 10px;
     border: none;
     padding: 5px;
     border-radius: 3px;
@@ -457,3 +468,36 @@ footer p {
 .search-bar button:hover {
     background-color: #ccc;
 }
+
+
+
+
+
+/* Styles pour le menu burger */
+.burger-menu {
+    display: none; 
+}
+
+.burger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 6px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-menu {
+    display: none; 
+}
+
+.navbar-menu.active {
+    display: block;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    z-index: 1000;
+    padding: 20px;
+}
+
