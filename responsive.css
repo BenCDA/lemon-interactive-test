@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+
     .burger-menu {
         display: flex;
         justify-content: space-around;
@@ -163,6 +164,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 350px;
     }
 
     .student {
@@ -181,32 +183,34 @@
     }
 
     .arrow img {
-        margin: 0 5px; 
-        width: 84px; 
+        margin: 0 5px;
+        width: 84px;
     }
 
     .avis-container {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
-    .first-avis, .second-avis {
-        flex: 1 1 45%; 
-        margin: 5px; 
-        box-sizing: border-box; 
+    .first-avis,
+    .second-avis {
+        flex: 1 1 45%;
+        margin: 5px;
+        box-sizing: border-box;
     }
 
-    .first-avis img, .second-avis img {
-        width: 80px; 
-        height: 80px; 
+    .first-avis img,
+    .second-avis img {
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
-        margin-right: 10px; 
+        margin-right: 10px;
     }
 
     .text-content {
-        text-align: left; 
+        text-align: left;
     }
 
     .underline {
@@ -215,4 +219,824 @@
         left: 120px;
     }
 
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+
+
+
+    .list-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .list-container ul {
+        width: auto;
+        margin: 10px 30px;
+        text-align: center;
+    }
+
+    .image-gallery {
+        width: 100%;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+        .burger-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+    
+        .burger-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px;
+        }
+    
+        .burger-icon {
+            width: 30px;
+            height: 3px;
+            background-color: var(--text-color);
+            margin: 3px 0;
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .title-logo {
+            display: flex;
+            align-items: end;
+            margin-left: auto;
+        }
+    
+        .title-logo img {
+            max-width: 100%;
+        }
+    
+        .burger-menu h1 {
+            margin: 0;
+            font-size: 16px;
+            margin-right: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 23.36px;
+            line-height: 31.81px;
+        }
+    
+        .burger-menu img {
+            width: 30px;
+            height: 30px;
+        }
+    
+        .navbar-menu {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-menu ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .navbar {
+            margin-right: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-right {
+            display: none;
+        }
+    
+        .navbar-brand {
+            margin-left: 0;
+        }
+    
+        .navbar-brand h1 {
+            display: none;
+        }
+    
+        header .content {
+            flex-direction: column;
+        }
+    
+    
+        header .text-section,
+        header .image-section {
+            width: auto;
+        }
+    
+    
+        header .image-section {
+            order: 2;
+        }
+    
+    
+        header .overlay-img-left {
+            position: absolute;
+            top: 250px;
+            left: -130px;
+        }
+    
+        header .overlay-img-right {
+            position: absolute;
+            top: 350px;
+            right: -200px;
+        }
+    
+    
+        header img[src$="topRight.png"] {
+            position: absolute;
+            right: -100px;
+            top: 50px;
+        }
+    
+    
+        main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 300px;
+            text-align: center;
+        }
+    
+        .grey-card,
+        .green-card {
+            flex: 0 0 100%;
+            width: 90%;
+            margin: 20px 0;
+            padding: 20px;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        .bg-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+    
+        .first-image,
+        .second-image {
+            position: absolute;
+            transform: none;
+            width: auto;
+        }
+    
+        .right-text {
+            flex-direction: column;
+            flex: 1;
+            margin-top: 0;
+            margin-left: 20px;
+        }
+    
+    
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 350px;
+        }
+    
+        .student {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .arrow {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-left: 30px;
+        }
+    
+        .arrow img {
+            margin: 0 5px;
+            width: 84px;
+        }
+    
+        .avis-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        .first-avis,
+        .second-avis {
+            flex: 1 1 45%;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+    
+        .first-avis img,
+        .second-avis img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        .text-content {
+            text-align: left;
+        }
+    
+        .underline {
+            position: absolute;
+            bottom: -1590px;
+            left: 120px;
+        }
+    
+    
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .search-bar {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .left-section,
+        .right-section {
+            width: 100%;
+        }
+    
+    
+    
+        .list-container {
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .list-container ul {
+            width: auto;
+            margin: 10px 30px;
+            text-align: center;
+        }
+    
+        .image-gallery {
+            width: 100%;
+        }
+    
+    
+    
+    
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    
+        .burger-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+    
+        .burger-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px;
+        }
+    
+        .burger-icon {
+            width: 30px;
+            height: 3px;
+            background-color: var(--text-color);
+            margin: 3px 0;
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .title-logo {
+            display: flex;
+            align-items: end;
+            margin-left: auto;
+        }
+    
+        .title-logo img {
+            max-width: 100%;
+        }
+    
+        .burger-menu h1 {
+            margin: 0;
+            font-size: 16px;
+            margin-right: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 23.36px;
+            line-height: 31.81px;
+        }
+    
+        .burger-menu img {
+            width: 30px;
+            height: 30px;
+        }
+    
+        .navbar-menu {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-menu ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .navbar {
+            margin-right: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-right {
+            display: none;
+        }
+    
+        .navbar-brand {
+            margin-left: 0;
+        }
+    
+        .navbar-brand h1 {
+            display: none;
+        }
+    
+        header .content {
+            flex-direction: column;
+        }
+    
+    
+        header .text-section,
+        header .image-section {
+            width: auto;
+        }
+    
+    
+        header .image-section {
+            order: 2;
+        }
+    
+    
+        header .overlay-img-left {
+            position: absolute;
+            top: 250px;
+            left: -130px;
+        }
+    
+        header .overlay-img-right {
+            position: absolute;
+            top: 350px;
+            right: -200px;
+        }
+    
+    
+        header img[src$="topRight.png"] {
+            position: absolute;
+            right: -100px;
+            top: 50px;
+        }
+    
+    
+        main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 300px;
+            text-align: center;
+        }
+    
+        .grey-card,
+        .green-card {
+            flex: 0 0 100%;
+            width: 90%;
+            margin: 20px 0;
+            padding: 20px;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        .bg-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+    
+        .first-image,
+        .second-image {
+            position: absolute;
+            transform: none;
+            width: auto;
+        }
+    
+        .right-text {
+            flex-direction: column;
+            flex: 1;
+            margin-top: 0;
+            margin-left: 20px;
+        }
+    
+    
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 350px;
+        }
+    
+        .student {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .arrow {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-left: 30px;
+        }
+    
+        .arrow img {
+            margin: 0 5px;
+            width: 84px;
+        }
+    
+        .avis-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        .first-avis,
+        .second-avis {
+            flex: 1 1 45%;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+    
+        .first-avis img,
+        .second-avis img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        .text-content {
+            text-align: left;
+        }
+    
+        .underline {
+            position: absolute;
+            bottom: -1590px;
+            left: 120px;
+        }
+    
+    
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .search-bar {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .left-section,
+        .right-section {
+            width: 100%;
+        }
+    
+    
+    
+        .list-container {
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .list-container ul {
+            width: auto;
+            margin: 10px 30px;
+            text-align: center;
+        }
+    
+        .image-gallery {
+            width: 100%;
+        }
+
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    
+        .burger-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+    
+        .burger-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px;
+        }
+    
+        .burger-icon {
+            width: 30px;
+            height: 3px;
+            background-color: var(--text-color);
+            margin: 3px 0;
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .title-logo {
+            display: flex;
+            align-items: end;
+            margin-left: auto;
+        }
+    
+        .title-logo img {
+            max-width: 100%;
+        }
+    
+        .burger-menu h1 {
+            margin: 0;
+            font-size: 16px;
+            margin-right: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 23.36px;
+            line-height: 31.81px;
+        }
+    
+        .burger-menu img {
+            width: 30px;
+            height: 30px;
+        }
+    
+        .navbar-menu {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-menu ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .navbar {
+            margin-right: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-right {
+            display: none;
+        }
+    
+        .navbar-brand {
+            margin-left: 0;
+        }
+    
+        .navbar-brand h1 {
+            display: none;
+        }
+    
+        header .content {
+            flex-direction: column;
+        }
+    
+    
+        header .text-section,
+        header .image-section {
+            width: auto;
+        }
+    
+    
+        header .image-section {
+            order: 2;
+        }
+    
+    
+        header .overlay-img-left {
+            position: absolute;
+            top: 250px;
+            left: -130px;
+        }
+    
+        header .overlay-img-right {
+            position: absolute;
+            top: 350px;
+            right: -200px;
+        }
+    
+    
+        header img[src$="topRight.png"] {
+            position: absolute;
+            right: -100px;
+            top: 50px;
+        }
+    
+    
+        main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 300px;
+            text-align: center;
+        }
+    
+        .grey-card,
+        .green-card {
+            flex: 0 0 100%;
+            width: 90%;
+            margin: 20px 0;
+            padding: 20px;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        .bg-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+    
+        .first-image,
+        .second-image {
+            position: absolute;
+            transform: none;
+            width: auto;
+        }
+    
+        .right-text {
+            flex-direction: column;
+            flex: 1;
+            margin-top: 0;
+            margin-left: 20px;
+        }
+    
+    
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 350px;
+        }
+    
+        .student {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .arrow {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-left: 30px;
+        }
+    
+        .arrow img {
+            margin: 0 5px;
+            width: 84px;
+        }
+    
+        .avis-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        .first-avis,
+        .second-avis {
+            flex: 1 1 45%;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+    
+        .first-avis img,
+        .second-avis img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        .text-content {
+            text-align: left;
+        }
+    
+        .underline {
+            position: absolute;
+            bottom: -1590px;
+            left: 120px;
+        }
+    
+    
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .search-bar {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .left-section,
+        .right-section {
+            width: 100%;
+        }
+    
+    
+    
+        .list-container {
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .list-container ul {
+            width: auto;
+            margin: 10px 30px;
+            text-align: center;
+        }
+    
+        .image-gallery {
+            width: 100%;
+        }
+    
+    
+    
+    
+    
 }

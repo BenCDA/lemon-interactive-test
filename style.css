@@ -299,6 +299,7 @@ section {
 article {
     margin-left: 120px;
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     gap: 50px;
     height: 352px;
@@ -517,6 +518,7 @@ footer h2 {
     justify-content: space-between; 
     margin-right: 20px; 
     background-color: #F8F8F8;
+    width: 90%;
 }
 
 .burger-menu-search-bar input {
