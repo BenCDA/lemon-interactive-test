@@ -1,5 +1,10 @@
 @media screen and (max-width: 768px) {
-
+    .navbar {
+        margin-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
     .navbar-menu {
         display: none; 
     }
@@ -9,8 +14,11 @@
     }
     
     .burger-menu {
-        display: flex; 
-        
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between; 
+        width: 100%; 
     }
 
     .navbar-menu.active {
@@ -42,13 +50,21 @@
 
     .title-logo {
         display: flex;
-        align-items: end;
-        margin-left: auto;
+        flex-direction: row;
+        justify-content: space-between; 
+        width: 100%;
+        padding-left: 30px;
     }
-
+    
+    .title-logo h1 {
+        margin: 0; 
+        padding-right: 250px; 
+    }
+    
     .title-logo img {
         max-width: 100%;
     }
+    
 
     .burger-menu h1 {
         margin: 0;
@@ -284,6 +300,11 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        margin-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
     .navbar-menu {
         display: none; 
@@ -326,10 +347,17 @@
     
         .title-logo {
             display: flex;
-            align-items: end;
-            margin-left: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding-left: 30px;
         }
-    
+        
+        .title-logo h1 {
+            margin: 0; 
+            padding-right: 250px; 
+        }
+        
         .title-logo img {
             max-width: 100%;
         }
@@ -563,6 +591,11 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
+    .navbar {
+        margin-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
     .navbar-menu {
         display: none; 
@@ -604,14 +637,20 @@
     
         .title-logo {
             display: flex;
-            align-items: end;
-            margin-left: auto;
+            flex-direction: row;
+            justify-content: space-between; 
+            width: 100%;
+            padding-left: 30px;
         }
-    
+        
+        .title-logo h1 {
+            margin: 0; 
+            padding-right: 250px; 
+        }
+        
         .title-logo img {
             max-width: 100%;
         }
-    
         .burger-menu h1 {
             margin: 0;
             font-size: 16px;
@@ -843,6 +882,11 @@
 
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .navbar {
+        margin-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
     .navbar-menu {
         display: none; 
@@ -886,10 +930,17 @@
     
         .title-logo {
             display: flex;
-            align-items: end;
-            margin-left: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding-left: 30px;
         }
-    
+        
+        .title-logo h1 {
+            margin: 0; 
+            padding-right: 250px; 
+        }
+        
         .title-logo img {
             max-width: 100%;
         }

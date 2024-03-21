@@ -524,6 +524,10 @@ footer h2 {
     background-color: #F8F8F8;
     width: 90%;
 }
+/* Lorsque .burger-menu a la classe .active, masquez l'image dans .title-logo */
+.burger-menu.active .title-logo img {
+    display: none;
+}
 
 .burger-menu-search-bar input {
     flex-grow: 1; 
@@ -542,7 +546,6 @@ footer h2 {
     border-radius: 5px;
     cursor: pointer;
 }
-
 
 
 .news {
