@@ -115,6 +115,7 @@ header {
     margin-right: 80px;
     border-radius: 20px;
     height: 300px;
+    position: relative;
 }
 
 .content {
@@ -345,7 +346,7 @@ article {
 .underline {
     position: absolute;
     left: 120px;
-    bottom: -1260px;
+    bottom: -1430px;
 }
 
 .arrow {
@@ -492,7 +493,10 @@ footer h2 {
 
 
 .navbar-menu {
-    display: none; 
+    display: flex; 
+}
+.navbar-menu button {
+    display: none;
 }
 
 .navbar-menu.active {
@@ -538,3 +542,18 @@ footer h2 {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.news {
+    font-size: 120px; 
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    color: #F8F8F8;
+    line-height: 163.42px;
+    position: relative; 
+    bottom: -163px; 
+    left: 16%; 
+    transform: translateX(-50%); 
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
