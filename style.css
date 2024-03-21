@@ -304,34 +304,33 @@ article {
     height: 352px;
 }
 
-.first-avis,
-.second-avis {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.first-avis, .second-avis {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 20px;
+    align-items: start; 
     background-color: #F8F8F8;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.first-avis img,
-.second-avis img {
-    margin-right: 20px;
+.first-avis img, .second-avis img {
+    grid-row: 1 / span 2; 
+    place-self: start; 
 }
 
-.first-avis div,
-.second-avis div {
+.text-content {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
-.first-avis h2,
-.second-avis h2 {
-    margin: 0;
+.first-avis p, .second-avis p {
+    grid-column: 1 / span 2; 
+    margin-top: 20px; 
 }
 
-.first-avis h3,
-.second-avis h3 {
-    margin-top: 5px;
-}
 
 .underline {
     position: absolute;

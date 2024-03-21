@@ -1,7 +1,49 @@
 @media screen and (max-width: 768px) {
     .burger-menu {
-        display: block; 
-        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .burger-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px; 
+    }
+
+    .burger-icon {
+        width: 30px;
+        height: 3px;
+        background-color: var(--text-color);
+        margin: 3px 0; 
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .title-logo {
+        display: flex;
+        align-items: end;
+            margin-left: auto;
+    }
+
+    .title-logo img {
+        max-width: 100%;
+    }
+    
+    .burger-menu h1 {
+        margin: 0;
+        font-size: 16px;
+        margin-right: 10px; 
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 23.36px;
+        line-height: 31.81px;
+    }
+
+    .burger-menu img {
+        width: 30px;
+        height: 30px;
     }
 
     .navbar-menu {
@@ -10,11 +52,16 @@
     }
 
     .navbar-menu ul {
-        margin-top: 20px;
         display: flex;
         flex-direction: column;
     }
 
+    .navbar {
+        margin-right: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
     .navbar-right {
         display: none; 
     }
@@ -22,6 +69,69 @@
     .navbar-brand {
         margin-left: 0; 
     }
+
+    .navbar-brand h1 {
+        display: none;
+    }
+    
+    header .content {
+        flex-direction: column;
+    }
+
+    
+    header .text-section,
+    header .image-section {
+        width: auto;
+    }
+
+
+    header .image-section {
+        order: 2; 
+    }
+
+    
+    header .overlay-img-left {
+        position: absolute;
+        top: 250px; 
+        left: -130px;
+    }
+    header .overlay-img-right {
+        position: absolute;
+        top: 350px;
+        right: -200px;
+    }
+
+   
+    header img[src$="topRight.png"] {
+        position: absolute;
+        right: -100px;
+        top: 50px;
+    }
+
+    /* Deuxieme sectino */
+
+    main {
+        display: flex;
+        flex-direction: column; /* Pour afficher les cartes en colonne sur les petits écrans */
+        align-items: center;
+    }
+    
+    .grey-card,
+    .green-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Permettre aux cartes de passer à la ligne si nécessaire */
+        justify-content: space-between; /* Espacement égal entre les cartes */
+        width: 100%; /* Les cartes occupent toute la largeur sur les petits écrans */
+        max-width: 800px; /* Limiter la largeur maximale des cartes si nécessaire */
+    }
+    
+    
+    
+
+    
+    
+    
 }
 
 
@@ -63,47 +173,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .navbar-brand h1 {
-        display: none;
-    }
 
-    .navbar {
-        margin-right: 10px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .news {
-        margin-left: 10px;
-    }
-
-    header {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .container {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    article {
-        margin-left: 10px;
-    }
-
-    .footer-content {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .search-bar {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    
-}
 
 
 
