@@ -226,7 +226,7 @@
 
     .underline {
         position: absolute;
-        bottom: -1590px;
+        bottom: -1890px;
         left: 120px;
     }
 
@@ -264,7 +264,14 @@
         width: 100%;
     }
 
-
+    .news {
+        font-size: 4vw; 
+        font-weight: 700; 
+        color: #000;
+        position: absolute; 
+        top: 9%; 
+        left: 10%;        
+    }
 
 
 }
@@ -538,10 +545,14 @@
             width: 100%;
         }
     
-    
-    
-    
-    
+        .news {
+            font-size: 4vw; 
+            font-weight: 700; 
+            color: #000;
+            position: absolute; 
+            top: 9%; 
+            left: 10%;        
+        }
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -807,6 +818,15 @@
     
         .image-gallery {
             width: 100%;
+        }
+
+        .news {
+            font-size: 4vw; 
+            font-weight: 700; 
+            color: #000;
+            position: absolute; 
+            top: 9%; 
+            left: 10%;        
         }
 
 }
@@ -1079,8 +1099,12 @@
             width: 100%;
         }
     
-    
-    
-    
-    
+        .news {
+            font-size: 4vw; 
+            font-weight: 700; 
+            color: #000;
+            position: absolute; 
+            top: 9%; 
+            left: 10%;        
+        }
 }
