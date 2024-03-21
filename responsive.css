@@ -10,31 +10,31 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-right: 10px; 
+        margin-right: 10px;
     }
 
     .burger-icon {
         width: 30px;
         height: 3px;
         background-color: var(--text-color);
-        margin: 3px 0; 
+        margin: 3px 0;
         transition: transform 0.3s ease-in-out;
     }
 
     .title-logo {
         display: flex;
         align-items: end;
-            margin-left: auto;
+        margin-left: auto;
     }
 
     .title-logo img {
         max-width: 100%;
     }
-    
+
     .burger-menu h1 {
         margin: 0;
         font-size: 16px;
-        margin-right: 10px; 
+        margin-right: 10px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 23.36px;
@@ -61,24 +61,24 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .navbar-right {
-        display: none; 
+        display: none;
     }
 
     .navbar-brand {
-        margin-left: 0; 
+        margin-left: 0;
     }
 
     .navbar-brand h1 {
         display: none;
     }
-    
+
     header .content {
         flex-direction: column;
     }
 
-    
+
     header .text-section,
     header .image-section {
         width: auto;
@@ -86,95 +86,78 @@
 
 
     header .image-section {
-        order: 2; 
+        order: 2;
     }
 
-    
+
     header .overlay-img-left {
         position: absolute;
-        top: 250px; 
+        top: 250px;
         left: -130px;
     }
+
     header .overlay-img-right {
         position: absolute;
         top: 350px;
         right: -200px;
     }
 
-   
+
     header img[src$="topRight.png"] {
         position: absolute;
         right: -100px;
         top: 50px;
     }
 
-    /* Deuxieme sectino */
 
     main {
         display: flex;
-        flex-direction: column; /* Pour afficher les cartes en colonne sur les petits écrans */
+        flex-direction: row;
         align-items: center;
+        margin-top: 300px;
+        text-align: center;
     }
-    
+
     .grey-card,
     .green-card {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; /* Permettre aux cartes de passer à la ligne si nécessaire */
-        justify-content: space-between; /* Espacement égal entre les cartes */
-        width: 100%; /* Les cartes occupent toute la largeur sur les petits écrans */
-        max-width: 800px; /* Limiter la largeur maximale des cartes si nécessaire */
-    }
-    
-    
-    
-
-    
-    
-    
-}
-
-
-@media screen and (max-width: 1200px) {
-    .navbar-brand h1 {
-        margin-left: 20px;
-    }
-
-    .navbar {
-        margin-right: 20px;
-    }
-
-    .news {
-        margin-left: 20px;
-    }
-
-    header {
-        margin-left: 20px;
-        margin-right: 20px;
+        flex: 0 0 100%;
+        width: 90%;
+        margin: 20px 0;
+        padding: 20px;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
     }
 
     .container {
-        margin-left: 20px;
-        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
-    article {
+    .bg-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .first-image,
+    .second-image {
+        position: static;
+        transform: none;
+        width: auto;
+    }
+
+    .right-text {
+        flex-direction: column;
+        flex: 1;
+        margin-top: 0;
         margin-left: 20px;
     }
 
-    .footer-content {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 
-    .search-bar {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+
 }
-
-
-
-
-
-

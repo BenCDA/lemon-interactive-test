@@ -230,6 +230,7 @@ main p {
     height: 40px;
     z-index: 1;
     border-radius: 10px;
+
 }
 
 .grey-card-image {
@@ -290,6 +291,7 @@ section {
 }
 
 .right-text p {
+    margin-top: 10px;
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;
@@ -304,20 +306,22 @@ article {
     height: 352px;
 }
 
-.first-avis, .second-avis {
+.first-avis,
+.second-avis {
     display: grid;
-    grid-template-columns: auto 1fr; 
-    grid-template-rows: auto auto; 
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
     gap: 20px;
-    align-items: start; 
+    align-items: start;
     background-color: #F8F8F8;
     padding: 20px;
     margin-bottom: 20px;
 }
 
-.first-avis img, .second-avis img {
-    grid-row: 1 / span 2; 
-    place-self: start; 
+.first-avis img,
+.second-avis img {
+    grid-row: 1 / span 2;
+    place-self: start;
 }
 
 .text-content {
@@ -326,16 +330,17 @@ article {
     justify-content: flex-start;
 }
 
-.first-avis p, .second-avis p {
-    grid-column: 1 / span 2; 
-    margin-top: 20px; 
+.first-avis p,
+.second-avis p {
+    grid-column: 1 / span 2;
+    margin-top: 20px;
 }
 
 
 .underline {
     position: absolute;
     left: 120px;
-    bottom: -1290px;
+    bottom: -1260px;
 }
 
 .arrow {
@@ -469,7 +474,7 @@ footer h2 {
 }
 
 .burger-menu {
-    display: none; 
+    display: none;
 }
 
 .burger-icon {
@@ -482,38 +487,39 @@ footer h2 {
 
 
 .navbar-menu {
-    display: none; 
+    display: none;
 }
 
 .navbar-menu.active {
     display: block;
     position: absolute;
-    top: 60px; 
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: var(--secondary-color);
     z-index: 1000;
     padding: 20px;
 }
+
 .burger-menu-search-bar {
-    display: none; 
-    border: 2px solid var(--secondary-color); 
+    display: none;
+    border: 2px solid var(--secondary-color);
     border-radius: 5px;
-    padding: 5px; 
+    padding: 5px;
 }
 
 .burger-menu-search-bar.active {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    margin-right: 20px; 
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
     background-color: #F8F8F8;
 }
 
 .burger-menu-search-bar input {
-    flex-grow: 1; 
-    padding: 8px; 
-    border: none; 
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
     border-radius: 5px;
     margin-right: 5px;
     background-color: #F8F8F8;
