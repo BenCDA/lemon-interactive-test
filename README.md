@@ -1,6 +1,6 @@
 # lemon-interactive-test
 
-Ce projet vise à reproduire fidèlement une maquette en versions desktop et mobile. L'objectif principal est de développer une application web responsive sans l'utilisation de bibliothèques CSS ou de frameworks JavaScript, mettant ainsi en avant la maîtrise des technologies fondamentales du web : HTML5, CSS3 et JavaScript.
+Ce projet vise à reproduire fidèlement une maquette en versions desktop et mobile. L'objectif principal est de développer une application web responsive sans l'utilisation de bibliothèques CSS ou de frameworks JavaScript.
 
 ## Fonctionnalités
 
@@ -22,7 +22,6 @@ Ce projet vise à reproduire fidèlement une maquette en versions desktop et mob
 Le projet a été réalisé sans l'utilisation de frameworks CSS ou JavaScript pour plusieurs raisons :
 - **Simplicité :** La maquette à reproduire ne nécessitait pas la complexité qu'apportent les frameworks.
 - **Performance :** En évitant les dépendances externes, le site est plus léger et plus rapide à charger.
-- **Apprentissage :** Cela permet de se concentrer sur les fondamentaux du web et de maîtriser les technologies de base.
 
 ## Installation
 

@@ -1,17 +1,21 @@
+/* Ici je crée des variables pour la police et les couleurs afin d'éviter la répétition de code */
 :root {
     --primary-color: #96C67F;
     --secondary-color: #FFFFFF;
+    --tertiary-color: #F8F8F8;
     --text-color: #000000;
     --font-family: 'Open Sans', sans-serif;
     --button-padding: 8px 12px;
 }
 
+/* Réinitialisation des marges */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Style de la barre de navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -76,6 +80,8 @@
     height: 18.71px;
 }
 
+/* Style des boutons de connexion et d'inscription */
+
 .login-btn {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -98,6 +104,7 @@
     font-size: 16px;
 }
 
+/* Ajout d'effet au survol des boutons */
 .login-btn:hover,
 .register-btn:hover {
     background-color: #ccc;
@@ -107,8 +114,9 @@
     margin-left: 120px;
 }
 
+/* Style du header de la page */
 header {
-    background-color: #F8F8F8;
+    background-color: var(--tertiary-color);
     padding: 20px;
     margin-top: 120px;
     margin-left: 120px;
@@ -176,6 +184,7 @@ header img[src$="topRight.png"] {
     top: -430px;
 }
 
+/* Style du main de la page */
 main {
     display: flex;
     flex-direction: row;
@@ -214,7 +223,7 @@ main p {
 }
 
 .grey-card {
-    background-color: #F8F8F8;
+    background-color: var(--tertiary-color);
 }
 
 .green-card {
@@ -231,7 +240,7 @@ main p {
     height: 40px;
     z-index: 1;
     border-radius: 10px;
-    
+
 }
 
 .grey-card-image {
@@ -239,9 +248,10 @@ main p {
 }
 
 .green-card-image {
-    background-color: #F8F8F8;
+    background-color: var(--tertiary-color);
 }
 
+/* Style de la section de la page */
 section {
     margin-left: 120px;
     margin-right: 80px;
@@ -290,6 +300,7 @@ section {
     font-size: 45px;
     line-height: 61.28px;
 }
+
 .right-text p {
     margin-top: 10px;
     font-family: var(--font-family);
@@ -297,6 +308,8 @@ section {
     font-size: 16px;
     line-height: 24px;
 }
+
+/* Style de l'article de la page */
 article {
     margin-left: 120px;
     margin-top: 100px;
@@ -310,25 +323,27 @@ article {
     gap: 30px;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start; 
-    width: 100%; 
-    margin: 20px 100px; 
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px 100px;
 }
 
-.first-avis, .second-avis {
+.first-avis,
+.second-avis {
     display: grid;
-    grid-template-columns: auto 1fr; 
-    grid-template-rows: auto auto; 
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
     gap: 20px;
-    align-items: start; 
-    background-color: #F8F8F8;
+    align-items: start;
+    background-color: var(--tertiary-color);
     padding: 20px;
     margin-bottom: 20px;
 }
 
-.first-avis img, .second-avis img {
-    grid-row: 1 / span 2; 
-    place-self: start; 
+.first-avis img,
+.second-avis img {
+    grid-row: 1 / span 2;
+    place-self: start;
 }
 
 .text-content {
@@ -337,9 +352,10 @@ article {
     justify-content: flex-start;
 }
 
-.first-avis p, .second-avis p {
-    grid-column: 1 / span 2; 
-    margin-top: 20px; 
+.first-avis p,
+.second-avis p {
+    grid-column: 1 / span 2;
+    margin-top: 20px;
 }
 
 
@@ -378,8 +394,9 @@ article p {
     line-height: 30px;
 }
 
+/* Style du footer (bas de page) */
 footer {
-    background-color: #000000;
+    background-color: var(--text-color);
     padding: 50px;
     color: var(--secondary-color);
     font-family: var(--font-family);
@@ -441,6 +458,7 @@ footer h2 {
     line-height: 32.68px;
 }
 
+/* Style de la barre de recherche présente dans le footer */
 .search-bar {
     display: flex;
     align-items: center;
@@ -475,12 +493,14 @@ footer h2 {
     font-weight: 400;
 }
 
+/* Ajout d'effet visuel au survol du bouton de la barre de recherche */
 .search-bar button:hover {
     background-color: #ccc;
 }
 
+/* Style du menu burger, je met display:none pour qu'il soit invisible de base car il ne doit apparaître qu'à partir d'une certaine taille d'écran */
 .burger-menu {
-    display: none; 
+    display: none;
 }
 
 .burger-icon {
@@ -493,49 +513,53 @@ footer h2 {
 
 
 .navbar-menu {
-    display: flex; 
+    display: flex;
 }
+
 .navbar-menu button {
     display: none;
 }
 
+/* Style de la navbar une fois le bouton burger activer */
 .navbar-menu.active {
     display: block;
     position: absolute;
-    top: 60px; 
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: var(--secondary-color);
-    z-index: 1000;
+    z-index: 1;
     padding: 20px;
 }
+
 .burger-menu-search-bar {
-    display: none; 
-    border: 2px solid var(--secondary-color); 
+    display: none;
+    border: 2px solid var(--secondary-color);
     border-radius: 5px;
-    padding: 5px; 
+    padding: 5px;
 }
 
+/* Style de la barre de recherche présente dans le menu burger une fois que celui-ci est ouvert */
 .burger-menu-search-bar.active {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    margin-right: 20px; 
-    background-color: #F8F8F8;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    background-color: var(--tertiary-color);
     width: 90%;
 }
-/* Lorsque .burger-menu a la classe .active, masquez l'image dans .title-logo */
+
 .burger-menu.active .title-logo img {
     display: none;
 }
 
 .burger-menu-search-bar input {
-    flex-grow: 1; 
-    padding: 8px; 
-    border: none; 
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
     border-radius: 5px;
     margin-right: 5px;
-    background-color: #F8F8F8;
+    background-color: var(--tertiary-color);
 }
 
 .burger-menu-search-bar button {
@@ -547,18 +571,17 @@ footer h2 {
     cursor: pointer;
 }
 
-
+/* Style de la classe news */
 .news {
-    font-size: 120px; 
+    font-size: 120px;
     font-family: var(--font-family);
     font-weight: 700;
-    color: #F8F8F8;
+    color: var(--tertiary-color);
     line-height: 163.42px;
-    position: relative; 
-    bottom: -163px; 
-    left: 16%; 
-    transform: translateX(-50%); 
+    position: relative;
+    bottom: -163px;
+    left: 16%;
+    transform: translateX(-50%);
     padding-bottom: 5px;
     display: inline-block;
 }
-

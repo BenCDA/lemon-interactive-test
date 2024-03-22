@@ -1,3 +1,4 @@
+/* Dans ce fichier j'utilise différents breakpoints pour gérer l'affichage de la page en fonction de la taille de l'écran de l'utilisateur */
 @media screen and (max-width: 768px) {
     .navbar {
         margin-right: 0;
